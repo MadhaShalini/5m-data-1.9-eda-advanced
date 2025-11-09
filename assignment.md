@@ -24,7 +24,8 @@ returns = pd.DataFrame({
 
 Answer:
 
-```python
+```correlation = returns['MSFT'].corr(returns['IBM'])
+print(correlation)
 
 ```
 
@@ -44,7 +45,11 @@ df = pd.DataFrame({
 
 Answer:
 
-```python
+```
+long_df = pd.melt(df, id_vars=['A'],value_vars=['B','C'], var_name='Variable', value_name='Value')
+
+print(long_df)
+
 
 ```
 
@@ -62,7 +67,9 @@ data = pd.Series(np.random.rand(len(dates)), index=dates)
 
 Answer:
 
-```python
+```
+sliced_data = data['2023-01-05':'2023-01-15']
+sliced_data
 
 ```
 
