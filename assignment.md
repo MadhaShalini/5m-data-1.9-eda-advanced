@@ -24,7 +24,8 @@ returns = pd.DataFrame({
 
 Answer:
 
-```correlation = returns['MSFT'].corr(returns['IBM'])
+correlation = returns['MSFT'].corr(returns['IBM'])
+
 print(correlation)
 
 ```
